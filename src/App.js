@@ -46,9 +46,8 @@ function App() {
           </div>
           <h2>Question #3</h2>
           <div className="content-paragraph">
-            <div>
+            <div className="user">
               <User />
-              <Posts />
             </div>
           </div>
         </div>

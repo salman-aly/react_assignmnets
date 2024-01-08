@@ -238,15 +238,15 @@ function User() {
     <div>
       {users.map((item, index) => (
         <>
-          <p key={index} className="user_details">  
+          <p key={index} className="user_details">
             {`USERNAME :${item.name}`}
             <br />
             {`USEREMAIL :${item.email}`}
+            <div>
+              <h3>Posts</h3>
+              <Posts userId={item.id} />
+            </div>
           </p>
-          <div>
-            <h3>Posts</h3>
-            <Posts userId={item.id} />
-          </div>
         </>
       ))}
     </div>
